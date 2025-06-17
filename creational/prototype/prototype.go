@@ -1,4 +1,4 @@
-package creational
+package prototype
 
 import "fmt"
 
@@ -9,6 +9,14 @@ type INPC interface {
 
 type Npc struct {
 	Name string
+}
+
+func Run() {
+	npc := Npc{Name: "NPC 1"}
+	npc2 := npc.Clone()
+
+	fmt.Println("NPC 1: ", npc.Name)
+	npc2.Print("NPC 2: ")
 }
 
 func (n *Npc) Print(s string) {

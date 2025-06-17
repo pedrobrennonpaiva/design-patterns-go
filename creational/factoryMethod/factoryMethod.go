@@ -1,8 +1,21 @@
-package creational
+package factory_method
 
 import "fmt"
 
-func GetCar(name string) (ICar, error) {
+func Run() {
+	car, _ := getCar("Prius")
+	car2, _ := getCar("Corolla")
+
+	fmt.Println("Car 1: ", car.GetName())
+	fmt.Println("Car 1: ", car.GetColor())
+	fmt.Println("Car 1: ", car.GetEngine())
+
+	fmt.Println("Car 2: ", car2.GetName())
+	fmt.Println("Car 2: ", car2.GetColor())
+	fmt.Println("Car 2: ", car2.GetEngine())
+}
+
+func getCar(name string) (ICar, error) {
 	switch name {
 	case "Prius":
 		return newPrius(), nil
