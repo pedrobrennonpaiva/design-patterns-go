@@ -1,6 +1,7 @@
 package main
 
 import (
+	"design-patterns-go/behavioral/strategy"
 	abstractFactory "design-patterns-go/creational/abstractFactory"
 	"design-patterns-go/creational/builder"
 	factoryMethod "design-patterns-go/creational/factoryMethod"
@@ -28,4 +29,9 @@ func main() {
 
 	fmt.Println("\nPrototype")
 	prototype.Run()
+
+	fmt.Println("\nBehavioral Patterns")
+
+	fmt.Println("\nStrategy")
+	strategy.Run()
 }

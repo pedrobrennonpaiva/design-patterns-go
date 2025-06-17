@@ -3,7 +3,6 @@ package singleton
 import (
 	"fmt"
 	"sync"
-	"time"
 )
 
 var once sync.Once
@@ -13,10 +12,23 @@ type single struct{}
 var singleInstance *single
 
 func Run() {
-	for range 10 {
-		go getInstance()
+	// Limpa qualquer instância anterior para garantir um teste limpo
+	singleInstance = nil
+
+	var wg sync.WaitGroup
+	fmt.Println("Starting singleton test with 10 concurrent requests...")
+
+	for i := range 10 {
+		wg.Add(1)
+		go func(id int) {
+			defer wg.Done()
+			instance := getInstance()
+			fmt.Printf("Goroutine %d got instance: %p\n", id, instance)
+		}(i) // Passa o índice para a goroutine
 	}
-	time.Sleep(1 * time.Second)
+
+	wg.Wait()
+	fmt.Println("All goroutines completed.")
 }
 
 func getInstance() *single {
