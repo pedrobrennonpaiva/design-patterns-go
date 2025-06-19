@@ -3,6 +3,7 @@ package main
 import (
 	"design-patterns-go/behavioral/observer"
 	"design-patterns-go/behavioral/strategy"
+	templateMethod "design-patterns-go/behavioral/templateMethod"
 	abstractFactory "design-patterns-go/creational/abstractFactory"
 	"design-patterns-go/creational/builder"
 	factoryMethod "design-patterns-go/creational/factoryMethod"
@@ -38,4 +39,8 @@ func main() {
 
 	fmt.Println("\nObserver")
 	observer.Run()
+
+	fmt.Println("\nTemplate Method")
+	templateMethod.Run()
+
 }
