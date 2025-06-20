@@ -11,6 +11,7 @@ import (
 	"design-patterns-go/creational/prototype"
 	"design-patterns-go/creational/singleton"
 	"design-patterns-go/structural/decorator"
+	"design-patterns-go/structural/proxy"
 	"fmt"
 )
 
@@ -52,4 +53,7 @@ func main() {
 
 	fmt.Println("\nDecorator")
 	decorator.Run()
+
+	fmt.Println("\nProxy")
+	proxy.Run()
 }
