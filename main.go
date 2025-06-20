@@ -10,6 +10,7 @@ import (
 	factoryMethod "design-patterns-go/creational/factoryMethod"
 	"design-patterns-go/creational/prototype"
 	"design-patterns-go/creational/singleton"
+	"design-patterns-go/structural/adapter"
 	"design-patterns-go/structural/decorator"
 	"design-patterns-go/structural/facade"
 	"design-patterns-go/structural/proxy"
@@ -60,4 +61,7 @@ func main() {
 
 	fmt.Println("\nFacade")
 	facade.Run()
+
+	fmt.Println("\nAdapter")
+	adapter.Run()
 }
