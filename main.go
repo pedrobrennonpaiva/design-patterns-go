@@ -10,6 +10,7 @@ import (
 	factoryMethod "design-patterns-go/creational/factoryMethod"
 	"design-patterns-go/creational/prototype"
 	"design-patterns-go/creational/singleton"
+	"design-patterns-go/structural/decorator"
 	"fmt"
 )
 
@@ -46,4 +47,9 @@ func main() {
 
 	fmt.Println("\nState")
 	state.Run()
+
+	fmt.Println("\nStructural Patterns")
+
+	fmt.Println("\nDecorator")
+	decorator.Run()
 }

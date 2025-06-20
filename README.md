@@ -28,9 +28,9 @@ These patterns provide mechanisms to create objects in a controlled way.
 
 #### Most Commonly Used
 - ⭐ **Factory Method** - Creates objects without specifying the exact class
+- ⭐ **Abstract Factory** - Creates families of related objects
 
 #### Others
-- **Abstract Factory** - Creates families of related objects
 - **Builder** - Constructs complex objects step by step
 - **Singleton** - Ensures a class has only one instance
 - **Prototype** - Creates new objects by copying existing ones
@@ -41,9 +41,9 @@ These patterns focus on object composition and relationships between objects.
 #### Most Commonly Used
 - ⭐ **Adapter** - Allows incompatible interfaces to work together
 - ⭐ **Facade** - Provides a simplified interface to a complex subsystem
+- ⭐ **Decorator** - Adds responsibilities to objects dynamically
 
 #### Others
-- **Decorator** - Adds responsibilities to objects dynamically
 - **Bridge** - Separates an abstraction from its implementation
 - **Composite** - Composes objects into tree structures
 - **Flyweight** - Minimizes memory usage by sharing common parts of objects
