@@ -11,6 +11,7 @@ import (
 	"design-patterns-go/creational/prototype"
 	"design-patterns-go/creational/singleton"
 	"design-patterns-go/structural/adapter"
+	"design-patterns-go/structural/bridge"
 	"design-patterns-go/structural/decorator"
 	"design-patterns-go/structural/facade"
 	"design-patterns-go/structural/proxy"
@@ -64,4 +65,7 @@ func main() {
 
 	fmt.Println("\nAdapter")
 	adapter.Run()
+
+	fmt.Println("\nBridge")
+	bridge.Run()
 }
