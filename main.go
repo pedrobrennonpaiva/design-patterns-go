@@ -15,6 +15,7 @@ import (
 	"design-patterns-go/structural/composite"
 	"design-patterns-go/structural/decorator"
 	"design-patterns-go/structural/facade"
+	"design-patterns-go/structural/flyweight"
 	"design-patterns-go/structural/proxy"
 	"fmt"
 )
@@ -72,4 +73,7 @@ func main() {
 
 	fmt.Println("\nComposite")
 	composite.Run()
+
+	fmt.Println("\nFlyweight")
+	flyweight.Run()
 }
